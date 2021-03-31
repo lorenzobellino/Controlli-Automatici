@@ -14,16 +14,13 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - Calcolo analitico di risposte nel tempo di sistemi dinamici mediante antitrasformata di Laplace.
 
 * [Laboratorio 1](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB02/LAIB_ES2.pdf)  testo dell'esercizio
-    + [sistema meccanico](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB02/E01)
-      - Risposta di sistemi dinamici del primo ordine ad ingressi canonici
+    + [Risposta di sistemi dinamici del primo ordine ad ingressi canonici](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB02/E01)
       - rispetto all'impulso unitario
       - rispetto al gradino unitario   
-    + [sistema elettrico](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB02/E02)
-      - Risposta al gradino di sistemi del secondo ordine
+    + [Risposta al gradino di sistemi del secondo ordine](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB02/E02)
       - effetto causato da diversi valori per i poli
       - effetto causato da diversi valori per gli zeri
       - effetto causato da due poli complessi coniugati
-    + [sistema elettrico](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB02/E02)
-      - Stabilità di sistemi dinamici LTI
+    + [Stabilità di sistemi dinamici LTI](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB02/E02)
       - Sistemi a tempo continuo
       - Sistemi a tempo discreto
