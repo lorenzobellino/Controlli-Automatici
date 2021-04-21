@@ -13,7 +13,7 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - Calcolo di funzioni di trasferimento.  
       - Calcolo analitico di risposte nel tempo di sistemi dinamici mediante antitrasformata di Laplace.
 
-* [Laboratorio 1](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB02/LAIB_ES2.pdf)  testo dell'esercizio
+* [Laboratorio 2](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB02/LAIB_ES2.pdf)  testo dell'esercizio
     + [Risposta di sistemi dinamici del primo ordine ad ingressi canonici](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB02/E01)
       - rispetto all'impulso unitario
       - rispetto al gradino unitario   
@@ -21,6 +21,18 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - effetto causato da diversi valori per i poli
       - effetto causato da diversi valori per gli zeri
       - effetto causato da due poli complessi coniugati
-    + [Stabilità di sistemi dinamici LTI](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB02/E02)
+    + [Stabilità di sistemi dinamici LTI](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB02/E03)
       - Sistemi a tempo continuo
       - Sistemi a tempo discreto
+
+      * [Laboratorio 3](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB03/LAIB_ES3.pdf)  testo dell'esercizio
+          + [Posizionamento dei poli mediante retroazione degli stati](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB03/E01)
+            - rispetto all'impulso unitario
+            - rispetto al gradino unitario   
+          + [Progetto di un osservatore dello stato](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB03/E02)
+            - effetto causato da diversi valori per i poli
+            - effetto causato da diversi valori per gli zeri
+            - effetto causato da due poli complessi coniugati
+          + [Posizionamento dei poli mediante regolatore](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB03/E03)
+            - Sistemi a tempo continuo
+            - Sistemi a tempo discreto
