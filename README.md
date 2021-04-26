@@ -36,9 +36,8 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - Progettazione del vettore colonna L
       - simulazione dell'evoluzione dello stato e della risposta del sistema
   + [Posizionamento dei poli mediante regolatore](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB03/E03)
-      - Sistemi a tempo continuo
-      - Sistemi a tempo discreto
-
-```bash
-  echo ciao
-```
+      - analisi di raggiungibilità e osservabilità
+      - progettazione del vettore L
+      - progettazione del vettore K
+      - definizione di un sistema controllato mediante regolatore dinamico
+      - simulazione dell'evouluzione degli stati e delle uscite
