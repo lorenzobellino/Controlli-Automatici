@@ -1,5 +1,5 @@
 # Controlli-Automatici
-## Politecnico di Torino 2019
+## Politecnico di Torino 2021
 
 Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 2021
 
