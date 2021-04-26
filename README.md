@@ -32,9 +32,13 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - applicazione della retroazione dello stato
       - simulazione della risposta del sistema retroazionato   
    + [Progetto di un osservatore dello stato](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB03/E02)
-      - effetto causato da diversi valori per i poli
-      - effetto causato da diversi valori per gli zeri
-      - effetto causato da due poli complessi coniugati
+      - analizzare le proprietà di osservabilità del sistema
+      - Progettazione del vettore colonna L
+      - simulazione dell'evoluzione dello stato e della risposta del sistema
   + [Posizionamento dei poli mediante regolatore](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB03/E03)
       - Sistemi a tempo continuo
       - Sistemi a tempo discreto
+
+```bash
+  echo ciao
+```
