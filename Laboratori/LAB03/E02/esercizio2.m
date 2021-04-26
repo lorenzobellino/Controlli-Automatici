@@ -60,7 +60,7 @@ x0tot3 = [dx3;x0oss]
 [ytot2,T2,xtot2] = lsim(sOsservatore,r,t,x0tot2);
 [ytot3,T3,xtot3] = lsim(sOsservatore,r,t,x0tot3);
 
-%plot dell uscita
+%plot dell uscita ytot ristetto a yoss
 
 figure, plot(t,r,'k',T1,ytot1(:,1),'r',T1,ytot1(:,2),'b--'),grid on,
 title('risposta y1 e la sua stima yoss per xtot1')
@@ -70,6 +70,8 @@ title('risposta y2 e la sua stima yoss per xtot2')
 
 figure, plot(t,r,'k',T3,ytot3(:,1),'r',T3,ytot3(:,2),'b--'),grid on,
 title('risposta y3 e la sua stima yoss per xtot3')
+
+
 
 %plot dello stato 
 %x1 rispetto xoss1
