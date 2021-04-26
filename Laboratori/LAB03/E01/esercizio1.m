@@ -1,8 +1,6 @@
 close all
 clear all
 
-s = tf('s')
-
 %posizionamento dei poli mediante retroazione degli stati
 A = [[0,1];[900,1]];
 B = [0;-9];
