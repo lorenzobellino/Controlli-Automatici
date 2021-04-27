@@ -134,3 +134,32 @@ close_system('DCmotor_parte2')
 ![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc1td.JPG)
 ### Kc = 5
 ![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc5td.JPG)
+
+## Passo 5 : Calcolo della f.d.t. in catena chiusa e dei diagrammi di Bode
+
+
+```Matlab
+%% PARTE 5 CALCOLO DELLA FDT IN CATENA CHIUSA E DEI DIAGRAMMI DI BODE
+
+figure
+for Kc=[0.1,1,5],
+ Kc
+ W=feedback(Kc*F1/s,1)
+ z_W=zero(W)
+ p_W=pole(W)
+ damp(W)
+ bode (W), grid on, xlim([1e-1, 1e4]), hold on,
+ title('DC-motor controllato in velocità')
+end
+legend(['Kc=',num2str(0.1)],['Kc=',num2str(1)],['Kc=',num2str(5)])
+
+
+```
+### Kc = 0.1
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc01e1p5.JPG)
+### Kc = 1
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc1e1p5.JPG)
+### Kc = 5
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc5e1p5.JPG)
+### Diagramma di Bode
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/bodeE1.JPG)
