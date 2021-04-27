@@ -1,7 +1,7 @@
 close all
 clear all
 
-%POSIZIONAMENTO DEI POLI MEDIANTE REGOLATORE
+%% POSIZIONAMENTO DEI POLI MEDIANTE REGOLATORE
 
 A = [0,1;900,1];
 B = [0;-9];
@@ -15,7 +15,7 @@ lOss2 = -180;
 l1 = -40;
 l2 = -60;
 
-%%PARTE 1:
+%% PARTE 1:
 %si analizzino le proprieta di raggiungibilita e di osservabilita del sis
 %A,B raggiungibile e A,C osservabile
 
@@ -27,14 +27,14 @@ rMo = rank(Mo)
 
 %se rMr == rMo --> il sistema e oss e ragg
 
-%%PARTE 2 :
+%% PARTE 2 :
 %progetto del vettore colonna L
 Pl = [lOss1,lOss2];
 L = place(A',C',Pl)';
 %verifico
 eigAminLC = eig(A-L*C)
 
-%%PARTE 3:
+%% PARTE 3:
 %progetto del vettore riga K
 
 Pk = [l1,l2];
@@ -42,7 +42,7 @@ K = place(A,B,Pk);
 %verifico
 eigAminBK = eig(A-B*K)
 
-%%PARTE 4 :
+%% PARTE 4 :
 %scelta del parametro alpha
 alpha=-1;
 % Per imporre la condizione di regolazione dell'uscita, basta scommentare:
@@ -54,7 +54,7 @@ Breg = [alpha*B; alpha*B];
 Creg = [C,-D*K; zeros(size(C)),C-D*K];
 Dreg = [alpha*D; alpha*D];
 
-%%PARTE 5 :
+%% PARTE 5 :
 %simulare evoluzione di dxtot e dytot ad un ingresso = onda quadra a freq
 %0.5 Hz e 2VPP
 %dati i seguenti valori dello stato iniziali:
@@ -66,7 +66,7 @@ dx03 = [-0.01;0];
 t=0:.001:4;
 r = sign(sin(2*pi*0.5*t));
 
-%sistema 
+%sistema
 sRegolato = ss(Areg,Breg,Creg,Dreg);
 
 %xo osservato
@@ -94,7 +94,7 @@ title('risposta ytot e la sua stima yoss per dx0tot2')
 figure, plot(t,r,'k',T3,yreg3(:,1),'r',T3,yreg3(:,2),'b--'),grid on,
 title('risposta ytot e la sua stima yoss per dx0tot3')
 
-%plot dello stato 
+%plot dello stato
 %xreg1 rispetto xoss1
 figure, plot(T1,xreg1(:,1),'r',T1,xreg1(:,3),'g--'), grid on,
 title('x1 rispetto ad x1oss per dx0tot1')
@@ -114,4 +114,3 @@ title('x2 rispetto ad x2oss per dx0tot2')
 
 figure, plot(T3,xreg3(:,2),'r',T3,xreg3(:,4),'g--'), grid on,
 title('x2 rispetto ad x2oss per dx0tot3')
-
