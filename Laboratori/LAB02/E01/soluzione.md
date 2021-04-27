@@ -1,5 +1,5 @@
 # LABORATORIO 2 : Risposta di sistemi del primo ordine a ingressi canonici
-## Passo 0 : definizione del sistema
+## Passo 0 : definizione dei sistemi
 
 ```Matlab
 close all
