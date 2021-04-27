@@ -112,5 +112,3 @@ title('x2 rispetto ad x2oss per dx2')
 figure, plot(T3,xtot3(:,2),'r',T3,xtot3(:,4),'g--'), grid on,
 title('x2 rispetto ad x2oss per dx3')
 ```
-
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB03/img/e1sim.JPG)
