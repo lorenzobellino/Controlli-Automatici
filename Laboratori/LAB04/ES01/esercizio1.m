@@ -17,12 +17,11 @@ clear all
  F2 = -(s*La+Ra)/((s^2)*J*La+s*(Beta*La+J*Ra)+Beta*Ra+Km^2)
 
  %% SIMULAZIONE DEL SISTEMA IN CATENA APERTA IN ASSENZA DEL DISTURBO Td
- Td = 0;
- u = 1/dcgain(F1);
+Td = 0;
+u = 1/dcgain(F1);
 
 open_system('DCmotor_parte1')
 sim('DCmotor_parte1')
-%w_rif=1/dcgain(F1)*ones(size(tout));
 figure, plot(tout,vel_ang, tout,u*ones(size(tout))), grid on,
 title('DC-motor in catena aperta in assenza del disturbo Td'),
 legend('\omega(t)','u(t)')
