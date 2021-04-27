@@ -85,3 +85,17 @@ figure, plot(tout,vel_ang, tout,u, tout,errore), grid on,
 ' in assenza del disturbo Td']),
  legend('\omega(t)','\omega_{rif}(t)','e(t)=\omega_{rif}(t)-\omega(t)',4)
 close_system('DCmotor_parte2')
+
+%% PARTE 5 CALCOLO DELLA FDT IN CATENA CHIUSA E DEI DIAGRAMMI DI BODE
+
+figure
+for Kc=[0.1,1,5],
+ Kc
+ W=feedback(Kc*F1/s,1)
+ z_W=zero(W)
+ p_W=pole(W)
+ damp(W)
+ bode (W), grid on, xlim([1e-1, 1e4]), hold on,
+ title('DC-motor controllato in velocità')
+end
+legend(['Kc=',num2str(0.1)],['Kc=',num2str(1)],['Kc=',num2str(5)])
