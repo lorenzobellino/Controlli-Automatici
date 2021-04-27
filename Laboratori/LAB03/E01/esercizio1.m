@@ -15,14 +15,14 @@ eigA = eig(A)
 lambda1 = -40;
 lambda2 = -60;
 
-%esercizio 1:
+%% PASSO 1:
 % si analizzino le prop. di raggiungibilita del sistema linearizzato
 
 Mr = ctrb(A,B) % matrice di raggiungibilita del sistema
 rankMr = rank(Mr)
 %rank = 2 ==> il sistema e completamente raggiungibile
 
-%PASSO 2:
+%% PASSO 2:
 %progettazione del vettore riga K tale che gli autovalori di A-BK = -40,-60
 
 P = [lambda1,lambda2]
@@ -34,7 +34,7 @@ eigAminBK = eig(A-B*K)
 %alpha = inv(-(C-D*K)*inv(A-B*K)*B+D)
 alpha = -1
 
-%PASSO 3:
+%% PASSO 3:
 %si applichi la retroazionedegli stati
 
 Ars = A-B*K
@@ -42,7 +42,7 @@ Brs = alpha*B
 Crs = C-D*K
 Drs = alpha*D
 
-%PASSO 4:
+%% PASSO 4:
 %si simuli l'evolòuzione della risposta dy(t) del sistema retroazionato ad un
 %ingresso r(t) = onda quadra di ampzza 0.5 Hz e ampiezza 2VPP si ponga alpha = -1
 
@@ -66,4 +66,3 @@ title(['Risposta \deltay(t) del sistema controllato mediante retroazione', ...
        ' dallo stato al variare di \deltax_0']),
 legend('r(t)',' \deltay(t) per \deltax_0^{(1)}', ...
               '  \deltay(t) per \deltax_0^{(2)}','   \deltay(t) per \deltax_0^{(3)}')
-
