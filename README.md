@@ -41,3 +41,15 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - progettazione del vettore K
       - definizione di un sistema controllato mediante regolatore dinamico
       - simulazione dell'evouluzione degli stati e delle uscite
+* [Laboratorio 4](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/LAIB_ES4.pdf) testo dell'esercizio
+    + [Simulazione di un motore elettrico controllato in velocità](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB04/E01)
+      - Simulazione del sistema in catena aperta in assenza di disturbi
+      - Simulazione del sistema in catena aperta in presenza di disturbi
+      - Simulazione del sistema in catena chiusa in assenza di disturbi
+      - Simulazione del sistema in catena chiusa in presenza di disturbi
+    + [Simulazione di un motore elettrico controllato in posizione](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB04/E02)
+      - Simulazione del sistema in catena aperta in assenza di disturbi
+      - Simulazione del sistema in catena aperta in presenza di disturbi
+      - Simulazione del sistema in catena chiusa in assenza di disturbi
+      - Simulazione del sistema in catena chiusa in presenza di disturbi
+      - Calcolo della f.d.t. in catena chiusa e dei diagrammi di Bode
