@@ -1,7 +1,7 @@
 close all
 clear all
 
- %PROGETTO DI UN OSSERVATORE DELLO STATO
+%% PROGETTO DI UN OSSERVATORE DELLO STATO
 
  A = [[0,1];[-2400,-100]];
  B = [0;9];
@@ -11,14 +11,14 @@ clear all
 lambda1 = -120;
 lambda2 = -180;
 
-%PARTE 1:
+%% PARTE 1:
 %si analizzino le proprieta di oervabilita del sistema
 
 Mo = obsv(A,C)
 rMo = rank(Mo)
 %se rMo == 2 allora il sistema � osservabile
 
-%%PARTE 2:
+%% PARTE 2:
 % assegnazione degli autovalori e generazione del vettore L
 
 P = [lambda1,lambda2];
@@ -26,7 +26,7 @@ L = place(A',C',P)'
 %verifico
 eigAminLC = eig(A-L*C)
 
-%%PARTE 3:
+%% PARTE 3:
 %definizione del sistema complessivo
 
 Atot = [A,zeros(size(A));L*C,A-L*C]
@@ -34,7 +34,7 @@ Btot = [B;B]
 Ctot = [C,zeros(size(C));zeros(size(C)),C]
 Dtot = [D;D]
 
-%PARTE 4:
+%% PARTE 4:
 %simulare evolutzione dello stato xtot(t) e della risposta ytot(t) ad un
 %ingresso u(t) ad onda quadra di frequenza 0.5 Hz ed ampiezza 2 VPP,
 %assumendo sempre nullo lo stato iniziale dell osdservatore ;
@@ -73,7 +73,7 @@ title('risposta y3 e la sua stima yoss per xtot3')
 
 
 
-%plot dello stato 
+%plot dello stato
 %x1 rispetto xoss1
 figure, plot(T1,xtot1(:,1),'r',T1,xtot1(:,3),'g--'), grid on,
 title('x1 rispetto ad x1oss per dx1')
@@ -92,5 +92,3 @@ title('x2 rispetto ad x2oss per dx2')
 
 figure, plot(T3,xtot3(:,2),'r',T3,xtot3(:,4),'g--'), grid on,
 title('x2 rispetto ad x2oss per dx3')
-   
-
