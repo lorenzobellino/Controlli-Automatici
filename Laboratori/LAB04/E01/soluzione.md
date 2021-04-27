@@ -21,6 +21,7 @@ clear all
  F1 = (Ka*Km)/((s^2)*J*La+s*(Beta*La+J*Ra)+Beta*Ra+Km^2)
  F2 = -(s*La+Ra)/((s^2)*J*La+s*(Beta*La+J*Ra)+Beta*Ra+Km^2)
 ```
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/f1f2e1.JPG)
 
 ## Passo 1: Simulazione in catena aperta in assenza del disturbo Td
 
