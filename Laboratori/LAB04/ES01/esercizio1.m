@@ -42,16 +42,16 @@ switch es,
 end
 
 
-open_system('DCmotor_parte1')
+open_system('DCmotor_parte2')
 sim('DCmotor_parte2')
 u = ones(size(tout));
 errore = u - vel_ang;
-figure, plot(tout,vel_ang, tout,u, tout,errore), grid on),
+figure, plot(tout,vel_ang, tout,u, tout,errore), grid on,
  title(['DC-motor controllato in velocita'' con Kc=', num2str(Kc), ...
 ' in assenza del disturbo Td']),
  legend('\omega(t)','\omega_{rif}(t)','e(t)=\omega_{rif}(t)-\omega(t)',4)
 close_system('DCmotor_parte2')
- 
+
 %% SIMULAZIONE DEL SISTEMA IN CATENA CHIUSA IN PRESENZA DEL DISTURBO Td
 Td=0.05;
 
@@ -66,15 +66,12 @@ switch es,
 end
 
 
-open_system('DCmotor_parte1')
+open_system('DCmotor_parte2')
 sim('DCmotor_parte2')
 u = ones(size(tout));
 errore = u - vel_ang;
-figure, plot(tout,vel_ang, tout,u, tout,errore), grid on),
+figure, plot(tout,vel_ang, tout,u, tout,errore), grid on,
  title(['DC-motor controllato in velocita'' con Kc=', num2str(Kc), ...
 ' in assenza del disturbo Td']),
  legend('\omega(t)','\omega_{rif}(t)','e(t)=\omega_{rif}(t)-\omega(t)',4)
 close_system('DCmotor_parte2')
- 
- 
- 
