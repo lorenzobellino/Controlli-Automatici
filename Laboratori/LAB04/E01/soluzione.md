@@ -21,9 +21,11 @@ clear all
  F1 = (Ka*Km)/((s^2)*J*La+s*(Beta*La+J*Ra)+Beta*Ra+Km^2)
  F2 = -(s*La+Ra)/((s^2)*J*La+s*(Beta*La+J*Ra)+Beta*Ra+Km^2)
 ```
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/f1f2e1.JPG){: style="float: right"}
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/f1f2e1.JPG)
 
 ## Passo 1: Simulazione in catena aperta in assenza del disturbo Td
+
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/dcmotorE1.JPG)
 
 ```Matlab
 %% SIMULAZIONE DEL SISTEMA IN CATENA APERTA IN ASSENZA DEL DISTURBO Td
@@ -37,3 +39,98 @@ title('DC-motor in catena aperta in assenza del disturbo Td'),
 legend('\omega(t)','u(t)')
 close_system('DCmotor_parte1')
 ```
+
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/passo1E1.JPG)
+
+## Passo 2 : Simulazione in catena aperta in presenza del disturbo Td
+
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/dcmotorE1.JPG)
+
+```Matlab
+%% SIMULAZIONE DEL SISTEMA IN CATENA APERTA IN PRESENZA DEL DISTURBO Td
+Td = 0.05;
+u = 1/dcgain(F1);
+
+open_system('DCmotor_parte1')
+sim('DCmotor_parte1')
+figure, plot(tout,vel_ang, tout,u*ones(size(tout))), grid on,
+title('DC-motor in catena aperta in assenza del disturbo Td'),
+legend('\omega(t)','u(t)')
+close_system('DCmotor_parte1')
+```
+
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/passo2.JPG)
+
+## Passo 3 : Simulazione in catena chiusa in assenza del disturbo Td
+
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/dcmotorP2.JPG)
+
+```Matlab
+%% SIMULAZIONE DEL SISTEMA IN CATENA CHIUSA IN ASSENZA DEL DISTURBO Td
+Td=0;
+
+es=menu('scelta del valore di Kc',...
+        'caso A: Kc = 0.1',...
+        'caso B: Kc = 1',...
+        'caso C: Kc = 5');
+switch es,
+    case 1, Kc = 0.1;
+    case 2, Kc = 1;
+    case 3, Kc = 5;
+end
+
+
+open_system('DCmotor_parte2')
+sim('DCmotor_parte2')
+u = ones(size(tout));
+errore = u - vel_ang;
+figure, plot(tout,vel_ang, tout,u, tout,errore), grid on,
+ title(['DC-motor controllato in velocita'' con Kc=', num2str(Kc), ...
+' in assenza del disturbo Td']),
+ legend('\omega(t)','\omega_{rif}(t)','e(t)=\omega_{rif}(t)-\omega(t)',4)
+close_system('DCmotor_parte2')
+
+```
+### Kc = 0.1
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc01.JPG)
+### Kc = 1
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc1.JPG)
+### Kc = 5
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc5.JPG)
+
+## Passo 4 : Simulazione in catena chiusa in assenza del disturbo Td
+
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/dcmotorP2.JPG)
+
+```Matlab
+%% SIMULAZIONE DEL SISTEMA IN CATENA CHIUSA IN ASSENZA DEL DISTURBO Td
+Td=0.05;
+
+es=menu('scelta del valore di Kc',...
+        'caso A: Kc = 0.1',...
+        'caso B: Kc = 1',...
+        'caso C: Kc = 5');
+switch es,
+    case 1, Kc = 0.1;
+    case 2, Kc = 1;
+    case 3, Kc = 5;
+end
+
+
+open_system('DCmotor_parte2')
+sim('DCmotor_parte2')
+u = ones(size(tout));
+errore = u - vel_ang;
+figure, plot(tout,vel_ang, tout,u, tout,errore), grid on,
+ title(['DC-motor controllato in velocita'' con Kc=', num2str(Kc), ...
+' in assenza del disturbo Td']),
+ legend('\omega(t)','\omega_{rif}(t)','e(t)=\omega_{rif}(t)-\omega(t)',4)
+close_system('DCmotor_parte2')
+
+```
+### Kc = 0.1
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc01td.JPG)
+### Kc = 1
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc1td.JPG)
+### Kc = 5
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/img/kc5td.JPG)

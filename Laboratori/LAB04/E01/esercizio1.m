@@ -27,6 +27,17 @@ title('DC-motor in catena aperta in assenza del disturbo Td'),
 legend('\omega(t)','u(t)')
 close_system('DCmotor_parte1')
 
+%% SIMULAZIONE DEL SISTEMA IN CATENA APERTA IN PRESENZA DEL DISTURBO Td
+Td = 0.05;
+u = 1/dcgain(F1);
+
+open_system('DCmotor_parte1')
+sim('DCmotor_parte1')
+figure, plot(tout,vel_ang, tout,u*ones(size(tout))), grid on,
+title('DC-motor in catena aperta in assenza del disturbo Td'),
+legend('\omega(t)','u(t)')
+close_system('DCmotor_parte1')
+
 %% SIMULAZIONE DEL SISTEMA IN CATENA CHIUSA IN ASSENZA DEL DISTURBO Td
 Td=0;
 
