@@ -55,3 +55,13 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - Simulazione del sistema in catena chiusa in assenza di disturbi
       - Simulazione del sistema in catena chiusa in presenza di disturbi
       - Calcolo della f.d.t. in catena chiusa e dei diagrammi di Bode
+
+
+
+* [Laboratorio 5](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/LAIB_ES5.pdf) testo dell'esercizio
+    + [Analisi della stabilità e del comportamento in regime permanente di un sistema retroazionato](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB05/E01)--> [soluzione.md](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB05/E01/soluzione.md)
+      - Determina guadagno stazionario e singolarità del sistema
+      - Tracciare i diagrammi di Bode
+      - Tracciare i diagrammi di Nyquist
+      - Verifica della stabilità del sistema ad anello chiuso mediante in criterio di Nyquist
+      - Calcolare l'errore di inseguimento in regime permanente in presenza di diversi disturbi e ingressi
