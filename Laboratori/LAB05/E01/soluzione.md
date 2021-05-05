@@ -61,7 +61,7 @@ We = Kr*feedback(1,Ga)
 Wd1 = feedback(F,Kc/Kr)
 Wd2 = feedback(1,Ga)
 ```
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB05/img/passo4.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB05/img/passo5_0.JPG)
 ### Caso 1: r(t)=t, d1(t)=0.1, d2(t)=0.5
 ```Matlab
 % errore intrinseco di inseguimento a r(t) = t NULLO perché il sistema è di
