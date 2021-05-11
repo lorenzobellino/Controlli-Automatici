@@ -67,8 +67,8 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - Calcolare l'errore di inseguimento in regime permanente in presenza di diversi disturbi e ingressi
 * [Laboratorio 6](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/LAIB_ES6.pdf) testo dell'esercizio
     + [Analisi della stabilità al variare del guadagno e del comportamento in regime permanente di sistemi retroazionati](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB06/E01)--> [soluzione.md](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB06/E01/soluzione.md)
-            - Determina guadagno stazionario, singolarità del sistema, fase iniziale e finale 
-            - Tracciare i diagrammi di Bode di Ga
-            - Tracciare i diagrammi di Nyquist di Ga
-            - Verifica della stabilità del sistema ad anello chiuso mediante in criterio di Nyquist al variare di Kc
-            - Calcolare l'errore di inseguimento in regime permanente in presenza di diversi disturbi e ingressi
+      - Determina guadagno stazionario, singolarità del sistema, fase iniziale e finale
+      - Tracciare i diagrammi di Bode di Ga
+      - Tracciare i diagrammi di Nyquist di Ga
+      - Verifica della stabilità del sistema ad anello chiuso mediante in criterio di Nyquist al variare di Kc
+      - Calcolare l'errore di inseguimento in regime permanente in presenza di diversi disturbi e ingressi
