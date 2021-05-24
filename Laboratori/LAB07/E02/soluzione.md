@@ -55,8 +55,8 @@ figure, bode(Ga1)
 % anche una rete attenuatrice per ridurre il modulo.
 % Il recupero della fase dovrà essere ottenuto usando due reti derivative.
 ```
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo2.JPG)!
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo2bode.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo2.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo2bode.JPG)
 
 ## Passo 3 : Costruzione delle reti compensative
 ### Reti derivative
@@ -71,8 +71,8 @@ Rd=(1+s*taua)/(1+s*taua/m_a)
 [m1_wc_des,f1_wc_des]=bode(Rd^2*Ga1,wcdes)
 figure, bode(Rd^2*Ga1)
 ```
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo3.JPG)!
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo3bode.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo3.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo3bode.JPG)
 
 ### Reti integrative
 ```Matlab
@@ -85,8 +85,8 @@ xi=230
 taui=xi/wcdes
 Ri=(1+s*taui/mi)/(1+s*taui)
 ```
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo32.JPG)!
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo3bode2.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo32.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo3bode2.JPG)
 
 ## Passo 4 : Verifica dei requisiti di sistema e definizione del controllore
 
@@ -95,8 +95,8 @@ figure, margin(Rd^2*Ri*Ga1)
 C=Kc*Rd^2*Ri
 Ga=C*F/Kr;
 ```
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo4.JPG)!
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo4margin.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo4.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo4margin.JPG)
 
 ## Passo 5 Verifica delle specifiche in catena chiusa
 ### risposta al gradino
@@ -109,8 +109,8 @@ W=feedback(C*F,1/Kr);
 
 figure, step(W), grid on
 ```
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5peak.JPG)!
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5salita.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5peak.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5salita.JPG)
 
 ### erreore alla rampa
 ```Matlab
@@ -122,7 +122,7 @@ y_rampa=lsim(W,r,t);
 figure, plot(t,Kr*r,t,y_rampa), title('Inseguimento alla rampa'), grid on
 figure, plot(t,Kr*r-y_rampa), title('Errore di inseguimento alla rampa'), grid on
 ```
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5rampa.JPG)!
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5rampa.JPG)
 [alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5errorerampa.JPG)
 
 ### verifica dell'effetto del disturbo in regime permanente
@@ -131,8 +131,8 @@ figure, plot(t,Kr*r-y_rampa), title('Errore di inseguimento alla rampa'), grid o
 Wd=feedback(F,1/Kr*C)
 figure, step(Wd,50)
 ```
-![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5wd.JPG)!
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5wddef.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5wd.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5wddef.JPG)
 
 ## Passo 6 : Valutazione delle prestazioni in catena chiusa
 
@@ -144,7 +144,7 @@ figure, step(Wd,50)
 Wu=feedback(C,F/Kr);
 figure,step(Wu)
 ```
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo6wu.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo6wu.JPG)
 
 ### banda passante e picco di risonanza
 ```Matlab
@@ -154,5 +154,5 @@ figure,step(Wu)
 figure,bode(W)
 figure, bode(W/Kr)
 ```
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo6bode1.JPG)
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo6bode2.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo6bode1.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo6bode2.JPG)
