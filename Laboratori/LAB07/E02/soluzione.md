@@ -138,7 +138,7 @@ figure, step(Wd,50)
 
 ### Attività sul comando
 ```Matlab
-% Attivit� sul comando:
+% Attività sul comando:
 % confrontare il valore iniziale del grafico con quanto ricavabile dal
 % teorema del valore iniziale; si ottiene u(o)=Kc*m_a^2/m_i = 267.9...
 Wu=feedback(C,F/Kr);
