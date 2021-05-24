@@ -123,7 +123,7 @@ figure, plot(t,Kr*r,t,y_rampa), title('Inseguimento alla rampa'), grid on
 figure, plot(t,Kr*r-y_rampa), title('Errore di inseguimento alla rampa'), grid on
 ```
 ![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5rampa.JPG)
-[alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5errorerampa.JPG)
+![alt text](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/img/e2passo5errorerampa.JPG)
 
 ### verifica dell'effetto del disturbo in regime permanente
 ```Matlab
