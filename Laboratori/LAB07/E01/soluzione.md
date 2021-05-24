@@ -1,4 +1,4 @@
-# LABORATORIO 7 : Progetto di Controllori analogici mediante sintesi per tentativi
+# LABORATORIO 7 ESERCIZIO 1: Progetto di Controllori analogici mediante sintesi per tentativi
 
 ## Passo 0 : Definizione del sistema
 
