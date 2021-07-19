@@ -80,7 +80,7 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - Calcolare l'errore di inseguimento in regime permanente in presenza di diversi disturbi e ingressi
 
 
-* [Laboratorio 7](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB04/LAIB_ES7.pdf) testo dell'esercizio
+* [Laboratorio 7](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/LAIB_ES7.pdf) testo dell'esercizio
     + [Progetto di controllori analogici mediante sintesi per tentativi](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E07)--> [soluzione.md](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E01/soluzione.md)
       - Progetto di un controllore che rispetti le specifiche di progetto
       - Valutare errori in regime permanente
