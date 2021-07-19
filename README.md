@@ -81,11 +81,11 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
 
 
 * [Laboratorio 7](https://github.com/lorenzobellino/Controlli-Automatici/blob/master/Laboratori/LAB07/LAIB_ES7.pdf) testo dell'esercizio
-    + [Progetto di controllori analogici mediante sintesi per tentativi](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E07)--> [soluzione.md](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E01/soluzione.md)
+    + [Progetto di controllori analogici mediante sintesi per tentativi](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E01)--> [soluzione.md](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E01/soluzione.md)
       - Progetto di un controllore che rispetti le specifiche di progetto
       - Valutare errori in regime permanente
       - Valutare attenuzioni dovute a disturbi di diverso tipo
-    + [Progetto di controllori analogici mediante sintesi per tentativi](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E07)--> [soluzione.md](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E02/soluzione.md)
+    + [Progetto di controllori analogici mediante sintesi per tentativi](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E02)--> [soluzione.md](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB07/E02/soluzione.md)
       - Progetto di un controllore che rispetti le specifiche di progetto
       - Valutare errori il valore massimo raggiunto dal comando
       - valuta banda passante e picco di risonanza
