@@ -49,7 +49,7 @@ Queste sono le mie soluzioni per il corso di Controlli Automatici dell'annno 202
       - Simulazione del sistema in catena aperta in presenza di disturbi
       - Simulazione del sistema in catena chiusa in assenza di disturbi
       - Simulazione del sistema in catena chiusa in presenza di disturbi
-    + [Simulazione di un motore elettrico controllato in posizione](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB04/E02)--> [soluzione.md](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB04/E01/soluzione.md)
+    + [Simulazione di un motore elettrico controllato in posizione](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB04/E02)--> [soluzione.md](https://github.com/lorenzobellino/Controlli-Automatici/tree/master/Laboratori/LAB04/E02/soluzione.md)
       - Simulazione del sistema in catena aperta in assenza di disturbi
       - Simulazione del sistema in catena aperta in presenza di disturbi
       - Simulazione del sistema in catena chiusa in assenza di disturbi
